@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukund's flask website 1</title>
+    <link rel = "stylesheet" href = {{ url_for('static', filename = 'css/style.css') }}>
+</head>
+<body>
+    <h1> submit your scores </h1>
+    <form action = '/submit' method = 'POST'>
+        <label for="sci">science</label>
+        <input type = "number" id = "sci" name = "sci">
+        <br>
+        <br>
+        <br>
+        <label for="mat">math</label>
+        <input type = "number" id = "mat" name = "mat">
+        <br>
+        <br>
+        <br>
+        <label for="eng">english</label>
+        <input type = "number" id = "eng" name = "eng">
+        <br>
+        <br>
+        <br>
+        <label for="hin">hindi</label>
+        <input type = "number" id = "hin" name = "hin">
+        <br>
+        <br>
+        <br>
+        <label for="cse">cs</label>
+        <input type = "number" id = "cs" name = "cs">
+        <br>
+        <br>
+        <br>
+        <input type = "submit" value = "submit">
+    </form>
+</body>
+</html>
